@@ -98,6 +98,11 @@ void XP_Retail_Game() {
     cout << "welcome to the Retail game where you have to manage your shop and trying to quit as your goal, make havok, dont get depressed and lose wages ;D";
 }
 
+void Game_play() {
+    cout << "Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?";
+
+}
+
 void XP_Adventure_Game() {
     string choice;
 
@@ -105,10 +110,7 @@ void XP_Adventure_Game() {
 
     // This is used for the main gameplay look
 
-    void Game_play(); {
-        cout << "Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?";
-    
-    } 
+   
 
 
     // This is where the user can make the choice to play the game or not
@@ -131,9 +133,9 @@ void XP_Adventure_Game() {
 int main() {
     int choice;
 
-    bool Program1 = true;
+    bool Introduction_loop = true;
 
-    while (Program1) {
+    while (Introduction_loop) {
 
         cout << "Welcome to the XP program where this contains lots of mini programs to explore different functions, Have fun!" << endl;
 
@@ -148,22 +150,23 @@ int main() {
         // User is able to choose different options for the games to play
         if (choice == 1) {
             school_system();
-
+            Introduction_loop = false;
         }
         else if (choice == 2) {
             Gacha();
-
+            Introduction_loop = false;
         }
         else if (choice == 3) {
             Banking_app();
-
+            Introduction_loop = false;
         }
         else if (choice == 4) {
             XP_Retail_Game();
-
+            Introduction_loop = false;
         }
         else if (choice == 5) {
             XP_Adventure_Game();
+            Introduction_loop = false;
 
         }
         else {
