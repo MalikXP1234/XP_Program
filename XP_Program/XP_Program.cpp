@@ -2,6 +2,20 @@
 
 using namespace std; // Uses names and objects from the main library
 
+
+// This is used to create the user's character
+
+class Character {
+
+public:
+    string character_name = "name";
+    string character_class = "class";
+    int character_damage = 0;
+    int character_hp = 0;
+    int character_mana= 0;
+
+};
+
 void school_system() {
 
     // These are the main values
@@ -85,16 +99,36 @@ void XP_Retail_Game() {
 }
 
 void XP_Adventure_Game() {
+    string choice;
 
-    cout << "Weclome to the Adventure game where you can make your own character and find hidden treasure to fight the boss!"
+    cout << "Weclome to the Adventure game where you can make your own character and find hidden treasure to fight the boss!" << endl;
 
-};
+    // This is used for the main gameplay look
+
+    void Game_play(); {
+        cout << "Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?";
+    
+    } 
 
 
+    // This is where the user can make the choice to play the game or not
 
+    cout << "Would you like to play this game? (YES/NO)";
+
+    cin >> choice;
+
+    if (choice == "YES") {
+        Character User_character;
+        Game_play();
+
+    }
+    else {
+        cout << "Needs fixing";
+    }
+
+}
 
 int main() {
-
     int choice;
 
     bool Program1 = true;
@@ -111,25 +145,39 @@ int main() {
         cout << "5 - XP Adventure game " << endl;
         cin >> choice;
 
-        if (choice == 1)
+        // User is able to choose different options for the games to play
+        if (choice == 1) {
             school_system();
 
-        else if (choice == 2)
+        }
+        else if (choice == 2) {
             Gacha();
 
-        else if (choice == 3)
+        }
+        else if (choice == 3) {
             Banking_app();
 
-        else if (choice == 4)
+        }
+        else if (choice == 4) {
             XP_Retail_Game();
 
-        else if (choice == 5)
+        }
+        else if (choice == 5) {
             XP_Adventure_Game();
-        else
-            cout << "Please input the correct value on screen" << endl;
 
-        return 0;
+        }
+        else {
+            cout << "Please input the correct value on screen" << endl;
+        }
+
     }
 
+};
 
-}
+ 
+
+
+
+
+
+    
