@@ -99,8 +99,49 @@ void XP_Retail_Game() {
 }
 
 void Game_play() {
-    cout << "Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?";
+    string Class_choice;
+    Character User_character;
 
+    cout << "'Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?'" << endl;
+    cin >> User_character.character_name;
+
+    string name = User_character.character_name;
+
+    cout << "'Ahh welcome " << name << ", It seems that you had an item with you, Can you remember what you had?' (CHOOSE UR CLASS : WARRIER, ARCHER, MAGE)";
+    cin >> Class_choice;
+
+    if (Class_choice == "WARRIER") {
+        cout << " 'Ofc, I remember you have this massive steel sword!'" << endl;
+        cout << "The old man gives you the massive sword into your hand" << endl;
+
+        User_character.character_class = "W";
+        User_character.character_hp = 14;
+        User_character.character_damage = 6;
+
+    }
+    else if (Class_choice == "ARCHER") {
+        cout << " 'Ofc, I remember you have this fine looking wooden bow'" << endl;
+        cout << "The old man gives you the wooden bow into your hand" << endl;
+
+        User_character.character_class = "A";
+        User_character.character_hp = 10;
+        User_character.character_damage = 4;
+
+    }
+    else if (Class_choice == "MAGE") {
+      
+        cout << " 'Ofc, I remember you had this magical looking fire staff'" << endl;
+        cout << "The old man gives you the staff into your hand" << endl;
+
+        User_character.character_class = "M";
+        User_character.character_hp = 8;
+        User_character.character_damage = 8;
+
+    }
+
+       
+
+    
 }
 
 void XP_Adventure_Game() {
@@ -120,7 +161,6 @@ void XP_Adventure_Game() {
     cin >> choice;
 
     if (choice == "YES") {
-        Character User_character;
         Game_play();
 
     }
