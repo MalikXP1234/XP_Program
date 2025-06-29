@@ -14,7 +14,7 @@ void school_system() {
     int num2;
     int num3;
 
-    cout << "Welcome to the school system which allows you to input your name, subject, age and results + some math problems to see if ur smart";
+    cout << "Welcome to the school system which contains simple string and maths";
 
     // Inputs your Name, Subject and Age
 
@@ -68,7 +68,7 @@ void school_system() {
 
     cout << "result is " << result3;
 
-} // First Program
+} 
 
 void Gacha() {
     cout << "Welcome to the gacha game where you can grind xp chips and use them to pull for your fav characters!";
@@ -84,9 +84,15 @@ void XP_Retail_Game() {
     cout << "welcome to the Retail game where you have to manage your shop and trying to quit as your goal, make havok, dont get depressed and lose wages ;D";
 }
 
+void XP_Adventure_Game() {
+
+    cout << "Weclome to the Adventure game where you can make your own character and find hidden treasure to fight the boss!"
+
+};
 
 
-// Version 1
+
+
 int main() {
 
     int choice;
@@ -102,6 +108,7 @@ int main() {
         cout << "2 - XP Gacha" << endl;
         cout << "3 - Banking App " << endl;
         cout << "4 - XP retail game " << endl;
+        cout << "5 - XP Adventure game " << endl;
         cin >> choice;
 
         if (choice == 1)
@@ -115,6 +122,9 @@ int main() {
 
         else if (choice == 4)
             XP_Retail_Game();
+
+        else if (choice == 5)
+            XP_Adventure_Game();
         else
             cout << "Please input the correct value on screen" << endl;
 
