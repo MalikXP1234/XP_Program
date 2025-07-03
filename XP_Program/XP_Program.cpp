@@ -146,6 +146,73 @@ void Game_play() {
 
     //////////////////CHAPTER 1//////////////////
 
+    cout << "This is your main HUB place where you can do different stuff to help you do certain actions" << endl;
+
+    // Main options
+
+    bool Main_action_loop = true;
+
+    int action_choice;
+
+    while (Main_action_loop) {
+
+        cout << "What would you like to do for today?" << endl;
+
+        cout << "1 - Info" << endl;
+        cout << "2 - Training" << endl;
+        cout << "3 - Inventory" << endl;
+        cout << "4 - Travel" << endl;
+        cout << "5 - Quit" << endl;
+        cin >> action_choice;
+
+        if (action_choice == 1) {
+            cout << "Ahh yes, lets see your inventory" << endl;
+
+        }
+        else if (action_choice == 2) {
+            cout << "Ahh yes, lets see your inventory" << endl;
+        }
+        else if (action_choice == 3) {
+
+            string inventory[5]; // the size of the users inventory system
+
+            cout << "Ahh yes, lets see your inventory" << endl;
+
+            if (sizeof(inventory) == 0) {
+                cout << "Well it looks like you got nothing in your bag, except your weapon and armor";
+            }
+            else {
+                cout << "alr, you got some stuff in your bag, lets see";
+
+                for (int i = 0; i < 5; i++) {
+                    cout << inventory[i] << "\n";
+                }
+
+            }
+
+        }
+        else if (action_choice == 4) {
+            cout << "Ahh yes, lets see your inventory" << endl;
+        }
+        else if (action_choice == 5) {
+
+            string last_choice;
+
+            cout << "Are you sure you want to quit the game? (YES/NO)" << endl;
+
+            if (last_choice == "YES") {
+            }
+            else {
+                cout << "Sorry, you must have inputted wrong data, please try again" << endl;
+
+            }
+        }
+
+    }
+
+    
+
+
     
 }
 
