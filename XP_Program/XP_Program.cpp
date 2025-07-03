@@ -99,8 +99,11 @@ void XP_Retail_Game() {
 }
 
 void Game_play() {
+
     string Class_choice;
     Character User_character;
+
+    //////////////////PROLAGUE//////////////////
 
     cout << "'Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?'" << endl;
     cin >> User_character.character_name;
@@ -136,10 +139,12 @@ void Game_play() {
         User_character.character_class = "M";
         User_character.character_hp = 8;
         User_character.character_damage = 8;
-
     }
 
-       
+    cout << "'There is Danger ahead and we need you to save the world!, Please help us and Goodluck!'" << endl;
+    cout << "You went off the bed and open the door to explore the new world ahead of you!" << endl;
+
+    //////////////////CHAPTER 1//////////////////
 
     
 }
@@ -214,6 +219,8 @@ int main() {
         }
 
     }
+
+    system("pause");
 
 };
 
