@@ -105,16 +105,21 @@ void Game_play() {
 
     //////////////////PROLAGUE//////////////////
 
+    cout << endl;
     cout << "'Hello Traveller from afar, we have found you lying on the ground and have taken you in. What is your name?'" << endl;
     cin >> User_character.character_name;
 
     string name = User_character.character_name;
 
+    cout << endl;
     cout << "'Ahh welcome " << name << ", It seems that you had an item with you, Can you remember what you had?' (CHOOSE UR CLASS : WARRIER, ARCHER, MAGE)";
     cin >> Class_choice;
 
     if (Class_choice == "WARRIER") {
-        cout << " 'Ofc, I remember you have this massive steel sword!'" << endl;
+        cout << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << endl;
+        cout << "'Ofc, I remember you have this massive steel sword!'" << endl;
         cout << "The old man gives you the massive sword into your hand" << endl;
 
         User_character.character_class = "W";
@@ -123,7 +128,10 @@ void Game_play() {
 
     }
     else if (Class_choice == "ARCHER") {
-        cout << " 'Ofc, I remember you have this fine looking wooden bow'" << endl;
+        cout << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << endl;
+        cout << "'Ofc, I remember you have this fine looking wooden bow'" << endl;
         cout << "The old man gives you the wooden bow into your hand" << endl;
 
         User_character.character_class = "A";
@@ -132,21 +140,30 @@ void Game_play() {
 
     }
     else if (Class_choice == "MAGE") {
-      
-        cout << " 'Ofc, I remember you had this magical looking fire staff'" << endl;
+        cout << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << endl;
+        cout << "'Ofc, I remember you had this magical looking fire staff'" << endl;
         cout << "The old man gives you the staff into your hand" << endl;
 
         User_character.character_class = "M";
         User_character.character_hp = 8;
         User_character.character_damage = 8;
     }
-
+    cout << endl;
+    cout << "--------------------------------------------------------------------------------" << endl;
+    cout << endl;
     cout << "'There is Danger ahead and we need you to save the world!, Please help us and Goodluck!'" << endl;
+    cout << endl;
     cout << "You went off the bed and open the door to explore the new world ahead of you!" << endl;
+    cout << endl;
+    cout << "--------------------------------------------------------------------------------" << endl;
+    cout << endl;
 
     //////////////////CHAPTER 1//////////////////
 
     cout << "This is your main HUB place where you can do different stuff to help you do certain actions" << endl;
+    cout << endl;
 
     // Main options
 
@@ -157,12 +174,15 @@ void Game_play() {
     while (Main_action_loop) {
 
         cout << "What would you like to do for today?" << endl;
-
+        cout << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
         cout << "1 - Info" << endl;
         cout << "2 - Training" << endl;
         cout << "3 - Inventory" << endl;
         cout << "4 - Travel" << endl;
         cout << "5 - Quit" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << endl;
         cin >> action_choice;
 
         if (action_choice == 1) {
