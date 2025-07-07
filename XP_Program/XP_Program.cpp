@@ -190,8 +190,48 @@ void Game_play() {
 
         // This will give the user some basic info on your story
         if (action_choice == 1) {
+            cout << endl;
             cout << "alright, lets check out your details." << endl;
 
+            if (User_character.character_class == "M") {
+                cout << "You are currently Playing as an MAGE " << endl;
+            }
+            else if (User_character.character_class == "W") {
+                cout << "You are currently Playing as an WARRIER" << endl;
+            }
+            else if (User_character.character_class == "A") {
+                cout << "You are currently Playing as an ARCHER" << endl;
+            }
+            cout << endl;
+            cout << "You currently have: " << User_character.character_hp << " Health, and you can deal " << User_character.character_damage << " Damage :>}" << endl;
+            cout << endl;
+
+            cout << "Your current level is {LEVEL}" << endl;
+            cout << endl;
+
+            cout << "You have been playing for {TIMER}" << endl;
+            cout << endl;
+
+            cout << "You have killed {TOTAL_MOBS_KILLS}" << endl;
+            cout << endl;
+
+            cout << "You have unlocked {ACHIVEMENTS}" << endl;
+            cout << endl;
+
+            cout << "You have explored all regions? {PERCENTAGE}" << endl;
+            cout << endl;
+
+            cout << "You have killed all types of mobs? {PERCENTAGE}" << endl;
+            cout << endl;
+
+            cout << "You have gotten the legendary weapon? {TRUE OR FALSE}" << endl;
+            cout << endl;
+
+            cout << "You have gotten the legendary armor? {TRUE OR FALSE}" << endl;
+            cout << endl;
+
+            cout << "You have gotten the legendary BackPack? {TRUE OR FALSE}" << endl;
+            cout << endl;
         }
         // This is where you can learn and train your skills
         else if (action_choice == 2) {
