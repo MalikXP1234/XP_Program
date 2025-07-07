@@ -1,4 +1,4 @@
-#include <iostream> // This is the code for the header file library like inputs and objects
+﻿#include <iostream> // This is the code for the header file library like inputs and objects
 #include <list>
 
 using namespace std; // Uses names and objects from the main library
@@ -181,20 +181,23 @@ void Game_play() {
         cout << "1 - Info" << endl;
         cout << "2 - Training" << endl;
         cout << "3 - Inventory" << endl;
-        cout << "4 - Travel" << endl;
+        cout << "4 - Travel" << endl; // Might need to add another option such as Adventure to explore and find out secret stuff as minigames
         cout << "5 - Quit" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << endl;
         cin >> action_choice;
         cout << endl;
 
+        // This will give the user some basic info on your story
         if (action_choice == 1) {
-            cout << "Ahh yes, lets see your inventory" << endl;
+            cout << "alright, lets check out your details." << endl;
 
         }
+        // This is where you can learn and train your skills
         else if (action_choice == 2) {
             cout << "Ahh yes, lets see your inventory" << endl;
         }
+        // This allows you to manage and use ur items in battle
         else if (action_choice == 3) {
 
             list<string> Inventory = {"empty", "empty", "empty", "empty", "empty"};// the size of the users inventory system
@@ -212,9 +215,30 @@ void Game_play() {
         
 
         }
+        // When the user is ready, they will need to explore the map and find out differnt parts
         else if (action_choice == 4) {
-            cout << "Ahh yes, lets see your inventory" << endl;
+            cout << endl;
+            cout << "This is the map" << endl;
+            cout << endl;
+
+            cout << "│---------------------Map of XP land---------------------│" << endl;
+            cout << "│--------------------------------------------------------│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│########################################################│" << endl;
+            cout << "│--------------------------------------------------------│" << endl;
+            cout << endl;
+
+
         }
+        // Main options
         else if (action_choice == 5) {
 
             string last_choice;
