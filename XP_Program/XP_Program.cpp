@@ -1,4 +1,5 @@
 #include <iostream> // This is the code for the header file library like inputs and objects
+#include <list>
 
 using namespace std; // Uses names and objects from the main library
 
@@ -173,7 +174,8 @@ void Game_play() {
 
     while (Main_action_loop) {
 
-        cout << "What would you like to do for today?" << endl;
+        
+        cout << "<What would you like to do for today?>" << endl;
         cout << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << "1 - Info" << endl;
@@ -184,6 +186,7 @@ void Game_play() {
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << endl;
         cin >> action_choice;
+        cout << endl;
 
         if (action_choice == 1) {
             cout << "Ahh yes, lets see your inventory" << endl;
@@ -194,21 +197,19 @@ void Game_play() {
         }
         else if (action_choice == 3) {
 
-            string inventory[5]; // the size of the users inventory system
+            list<string> Inventory = {"empty", "empty", "empty", "empty", "empty"};// the size of the users inventory system
+           
 
-            cout << "Ahh yes, lets see your inventory" << endl;
-
-            if (sizeof(inventory) == 0) {
-                cout << "Well it looks like you got nothing in your bag, except your weapon and armor";
+            cout << "<Ahh yes, lets see your inventory>" << endl;
+            cout << endl;
+            cout << "-------Inventory Slots 0/5-------" << endl;
+            for (string slot : Inventory) {
+                cout << slot << endl;
             }
-            else {
-                cout << "alr, you got some stuff in your bag, lets see";
-
-                for (int i = 0; i < 5; i++) {
-                    cout << inventory[i] << "\n";
-                }
-
-            }
+            cout << endl;
+            cout << "---------------------------------" << endl;
+            cout << endl;
+        
 
         }
         else if (action_choice == 4) {
